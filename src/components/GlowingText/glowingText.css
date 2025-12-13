@@ -1,0 +1,44 @@
+/* src/GlowText.css */
+.glow-text-orange {
+  color: #ffcc00; /* Base text color, a bright orange/yellow */
+  text-shadow:
+    0 0 5px rgba(255, 180, 0, 0.7), /* subtle inner glow */
+    0 0 15px rgba(255, 180, 0, 0.5), /* medium glow */
+    0 0 30px rgba(255, 150, 0, 0.3), /* outer glow */
+    0 0 45px rgba(255, 120, 0, 0.2); /* very outer glow */
+}
+
+.glow-text-white {
+  color: #ffffff; /* Base text color, white */
+  text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.7), /* subtle inner glow */
+    0 0 15px rgba(255, 255, 255, 0.5), /* medium glow */
+    0 0 30px rgba(255, 255, 255, 0.3), /* outer glow */
+    0 0 45px rgba(255, 255, 255, 0.2); /* very outer glow */
+}
+
+/* Optional: Add a subtle animation to the glow */
+@keyframes pulse-glow {
+  0% {
+    text-shadow:
+      0 0 5px rgba(255, 180, 0, 0.7),
+      0 0 15px rgba(255, 180, 0, 0.5),
+      0 0 30px rgba(255, 150, 0, 0.3);
+  }
+  50% {
+    text-shadow:
+      0 0 7px rgba(255, 190, 0, 0.9),
+      0 0 20px rgba(255, 190, 0, 0.6),
+      0 0 35px rgba(255, 160, 0, 0.4);
+  }
+  100% {
+    text-shadow:
+      0 0 5px rgba(255, 180, 0, 0.7),
+      0 0 15px rgba(255, 180, 0, 0.5),
+      0 0 30px rgba(255, 150, 0, 0.3);
+  }
+}
+
+.animate-glow-pulse-orange {
+  animation: pulse-glow 2s infinite alternate;
+}
