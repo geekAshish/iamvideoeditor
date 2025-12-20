@@ -1,4 +1,3 @@
-
 import { Twitter, Facebook, Instagram, Github } from 'lucide-react';
 
 const CallToActionAndFooterDark = () => {
@@ -24,8 +23,9 @@ const CallToActionAndFooterDark = () => {
       <footer className="border-t border-gray-800 py-10 px-4 sm:px-8 text-center sm:text-left">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center space-y-8 sm:space-y-0">
           {/* Logo */}
-          <div className="text-xl font-bold text-white tracking-wider">
-            / RAREBLOCKS
+          <div className="text-2xl font-bold tracking-wider">
+            <span className="text-gray-400 font-light">Video</span>
+            <span className="text-purple-500">Alchemist</span>
           </div>
 
           {/* Navigation Links */}

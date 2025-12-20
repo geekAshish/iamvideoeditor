@@ -6,13 +6,15 @@ import Testimonials from './components/Testimonials';
 import VideoEditingIntro from './components/TextFromRight/TextFromRight';
 import { YouTubeCarousel } from './components/YoutubeCarousel/YoutubeCarousel';
 import VideoEditorHero from './VideoAlchamy'
+import ShortFormGrid from './components/ShortFormGrid';
+
 
 function App() {
 
   const myVideos = [
-        'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        'https://www.youtube.com/watch?v=3JZ_D3ELwOQ',
-        'https://youtu.be/LXb3EKWsInQ',
+        'https://youtu.be/FS03aWTVLUg?si=FFfcRzZ0wKWYf92D',
+        'https://youtu.be/QlyJOIBbMf8?si=SDE86bRjLOzOgqVX',
+        'https://youtu.be/mleTrrUBc60?si=ygOKIkUCMAxLoBgA',
     ];
 
   return (
@@ -35,11 +37,11 @@ function App() {
 
       <GlowHeadline
         orangeText="Short-Form"
-        whiteText="edits"
+        whiteText="Content"
         className=""
       />
 
-      <YouTubeCarousel videoLinks={myVideos} />
+      <ShortFormGrid />
 
       <Testimonials />
 

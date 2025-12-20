@@ -11,9 +11,9 @@ const VideoEditorHero = () => {
     <div className="bg-black text-white w-full min-h-screen p-8 font-sans">
       {/* HEADER / NAVBAR */}
       <header className="flex justify-between items-center mb-20">
-        <div className="text-2xl font-bold">
-          <span className="font-light">Video</span>
-          <span>Alchemist</span>
+        <div className="text-2xl font-bold tracking-wider">
+          <span className="text-gray-400 font-light">Video</span>
+          <span className="text-purple-500">Alchemist</span>
         </div>
         <nav className="hidden md:flex items-center space-x-10 text-sm uppercase tracking-widest">
           <a href="#" className="hover:text-purple-400 transition-colors duration-300">Home</a>
@@ -39,25 +39,29 @@ const VideoEditorHero = () => {
       <main className="grid grid-cols-1 md:grid-cols-2 items-center gap-16">
         {/* Left Column: Text Content */}
         <div className="text-center md:text-left">
-          <p className="text-purple-400 font-semibold tracking-wider mb-3">AMAN VERMA</p>
+          <p className="text-purple-400 font-semibold tracking-widest uppercase mb-2">
+            Video Editor & Motion Designer
+          </p>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-5">
             PROFESSIONAL<br />
-            
+
             <RotatingText
-              texts={['Graphics Design', 'Video Editing', 'Podcast Editing']}
+              texts={['Video Editing', 'Cinematic Cuts', 'Fast-Paced Reels', 'Motion Graphics', 'Clean Transitions', 'Storytelling Edits']}
               mainClassName="overflow-hidden rounded-lg"
               staggerFrom={"last"}
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               exit={{ y: "-120%" }}
-              staggerDuration={0.025}
+              staggerDuration={0.015}
               splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
               transition={{ type: "spring", damping: 30, stiffness: 400 }}
               rotationInterval={2000}
             />
           </h1>
-          <p className="text-lg text-gray-300 mb-10">
-            Making Your Videos Look More Cool.
+          <p className="text-gray-300 text-lg mb-4 max-w-xl">
+            Hi, I’m <span className="text-white font-semibold">Aman Verma</span> — I create
+            <span className="text-purple-400 font-semibold"> scroll-stopping video stories </span>
+            that keep audiences hooked.
           </p>
           <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-10 rounded transition-transform transform hover:scale-105 duration-300">
             LET'S TALK

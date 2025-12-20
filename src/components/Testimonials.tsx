@@ -1,35 +1,38 @@
-
-
 // --- Testimonial Data ---
+
+import client1 from '../assets/clients/client_review-1.jpg';
+import client2 from '../assets/clients/client_review-2.jpg';
+import client3 from '../assets/clients/client_review-3.jpg';
+
 const testimonialsData = [
   {
     id: 1,
-    quote: "Working with them was a game-changer. The final video quality was beyond our expectations, and the creative input was invaluable. Highly recommended!",
-    name: 'Prakash Kumar',
-    title: 'Founder & CEO, Creative Minds',
-    companyLogo: 'https://res.cloudinary.com/dvz09m8qj/image/upload/v1728312560/logo-1_g1f1su.png', // Assuming light mode logo is visible on dark background
-    authorImage: 'https://res.cloudinary.com/dvz09m8qj/image/upload/v1728312560/face_1_xpgllj.jpg',
+    quote: "The reels Aman delivered completely changed how our content performs.The pacing, transitions, and storytelling were spot-on. Our watch time and engagement improved almost immediately.",
+    name: 'MAX',
+    title: 'Marketing Manager',
+    companyLogo: client1, 
+    authorImage: client1,
   },
   {
     id: 2,
-    "quote": "I didn't know our podcast audio could sound this professional. The editing was seamless and turned our raw recordings into a polished, engaging show.",
-    name: 'Albert Flores',
-    title: 'Senior Product Manager, Ridoria',
-    companyLogo: 'https://res.cloudinary.com/dvz09m8qj/image/upload/v1728312560/logo-2_d1szg7.png', // Assuming light mode logo is visible on dark background
-    authorImage: 'https://res.cloudinary.com/dvz09m8qj/image/upload/v1728312560/face-2_n2fdhf.jpg',
+    "quote": "Aman has a strong sense of narrative, especially for long-form videos. He understands where to cut, where to pause, and how to keep viewers watching till the end.",
+    name: 'Dylan Reynolds',
+    title: 'Entrepreneur & Content Creator',
+    companyLogo: client2,
+    authorImage: client2,
   },
   {
     id: 3,
-    "quote": "The logo animation they created gave our brand a fresh, modern identity. It was delivered on time and perfectly captured the essence of our company.",
-    name: 'Jenny Wilson',
-    title: 'Head of Marketing, Incanto',
-    companyLogo: 'https://res.cloudinary.com/dvz09m8qj/image/upload/v1728312560/logo-3_n2pqj2.png', // Assuming light mode logo is visible on dark background
-    authorImage: 'https://res.cloudinary.com/dvz09m8qj/image/upload/v1728312560/face-3_sxt7jb.jpg',
+    "quote": "From the first draft to the final delivery, everything felt professional and well-planned. The final video matched our brand perfectly and was delivered right on time.",
+    name: 'Chris Boustedt',
+    title: 'YouTube Creator',
+    companyLogo: client3,
+    authorImage: client3,
   }
 ];
 
 // --- Testimonial Card Component ---
-const TestimonialCard = ({index, quote, name, title, companyLogo, authorImage }: {index: number, quote: string, name: string, title: string, companyLogo: string, authorImage: string }) => {
+const TestimonialCard = ({index, quote, name, title, companyLogo }: {index: number, quote: string, name: string, title: string, companyLogo: string, authorImage: string }) => {
   let angle = "-"
   if (index % 2 === 0) {
     angle = ""
@@ -50,16 +53,16 @@ const TestimonialCard = ({index, quote, name, title, companyLogo, authorImage }:
         <img 
           src={companyLogo} 
           alt={`${name}'s company logo`} 
-          className="h-8 filter brightness-150" // Adjust brightness to ensure visibility on dark background
+          className="h-11 rounded-full filter brightness-150" // Adjust brightness to ensure visibility on dark background
         />
       </div>
-      <div className="mt-4 pt-4 border-t border-gray-700 flex justify-end">
+      {/* <div className="mt-4 pt-4 border-t border-gray-700 flex justify-end">
          <img 
           src={authorImage} 
           alt={name} 
           className="w-14 h-14 rounded-full object-cover" 
         />
-      </div>
+      </div> */}
     </div>
   );
 };

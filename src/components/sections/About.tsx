@@ -16,28 +16,27 @@ const AboutMe = () => {
 
       {/* Description */}
       <p className="max-w-4xl mx-auto text-base sm:text-lg leading-relaxed mb-12 text-gray-300">
-        Welcome To The Cinematic Realm Of Jimmy, Where Creativity Meets Technology To Craft Visually Stunning Narratives. With
-        A Passion For Storytelling And A Keen Eye For Detail, I Embark On A Journey To Transform Ordinary Footage Into
-        Extraordinary Visual Experiences.
+        I’m Aman Verma — a video editor driven by storytelling.
+        I blend emotion, rhythm, and cinematic visuals to turn raw footage into engaging stories that audiences actually watch and remember.
       </p>
 
       {/* Services/Skills List */}
       <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-lg sm:text-xl font-medium">
         <div className="flex items-center space-x-2">
           <span className="h-2 w-2 bg-green-500 rounded-full animate-pulse"></span>
-          <span>Cash Cow Editing</span>
+          <span>Cash Cow YouTube Editing</span>
         </div>
         <div className="flex items-center space-x-2">
           <span className="h-2 w-2 bg-green-500 rounded-full animate-pulse"></span>
-          <span>Reels Editing</span>
+          <span>High-Retention Reels</span>
         </div>
         <div className="flex items-center space-x-2">
           <span className="h-2 w-2 bg-green-500 rounded-full animate-pulse"></span>
-          <span>Logo Animation</span>
+          <span>Brand Logo Animation</span>
         </div>
         <div className="flex items-center space-x-2">
           <span className="h-2 w-2 bg-green-500 rounded-full animate-pulse"></span>
-          <span>Podcast Edit</span>
+          <span>Clean Podcast Editing</span>
         </div>
       </div>
     </div>
