@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 // --- Testimonial Data ---
 const testimonialsData = [
@@ -29,7 +29,7 @@ const testimonialsData = [
 ];
 
 // --- Testimonial Card Component ---
-const TestimonialCard = ({index, quote, name, title, companyLogo, authorImage }) => {
+const TestimonialCard = ({index, quote, name, title, companyLogo, authorImage }: {index: number, quote: string, name: string, title: string, companyLogo: string, authorImage: string }) => {
   let angle = "-"
   if (index % 2 === 0) {
     angle = ""
