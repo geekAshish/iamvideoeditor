@@ -40,16 +40,20 @@ const ShortFormGrid: React.FC = () => {
     };
 
     return (
-        <section className="bg-black py-8">
+        <section className="bg-black px-6 pb-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                 {reels.map((reel, index) => (
                     <div
                         key={index}
                         onClick={() => openReel(reel.url)}
                         className={`group relative cursor-pointer rounded-xl overflow-hidden bg-black
-              transition-transform duration-300
-              ${index % 2 !== 0 ? 'md:translate-y-14' : 'md:translate-y-0'}
-            `}
+                        transition-transform duration-300
+                        ${/* Original Stagger Effect for Desktop */ ''}
+                        ${index % 2 !== 0 ? 'md:translate-y-14' : 'md:translate-y-0'}
+                        
+                        ${/* NEW LOGIC: Hide index 5 and above on mobile, show on md+ screens */ ''}
+                        ${index >= 5 ? 'hidden md:block' : 'block'}
+                        `}
                     >
                         {/* Thumbnail */}
                         <img

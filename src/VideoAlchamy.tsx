@@ -23,15 +23,15 @@ const VideoEditorHero = () => {
           <a href="#" className="hover:text-purple-400 transition-colors duration-300">Contact</a>
         </nav>
         <div className="flex items-center space-x-5">
-          <a href="#" aria-label="Facebook" className="hover:text-purple-400 transition-colors duration-300">
+          {/* <a href="#" aria-label="Facebook" className="hover:text-purple-400 transition-colors duration-300">
             <FaFacebookF size="1.2em" />
-          </a>
-          <a href="#" aria-label="LinkedIn" className="hover:text-purple-400 transition-colors duration-300">
+          </a> */}
+          <a href="https://www.linkedin.com/in/aman-verma-i30" aria-label="LinkedIn" className="hover:text-purple-400 transition-colors duration-300">
             <FaLinkedinIn size="1.2em" />
           </a>
-          <a href="#" aria-label="YouTube" className="hover:text-purple-400 transition-colors duration-300">
+          {/* <a href="#" aria-label="YouTube" className="hover:text-purple-400 transition-colors duration-300">
             <FaYoutube size="1.2em" />
-          </a>
+          </a> */}
         </div>
       </header>
 
