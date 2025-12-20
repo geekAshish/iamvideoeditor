@@ -1,4 +1,4 @@
-import { FaFacebookF, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
 import premiore_pro from './assets/premiore_pro.png'
 import after_effect from './assets/after_effect.png'
 import aman_pro from "./assets/aman_face.png"
