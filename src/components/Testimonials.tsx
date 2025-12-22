@@ -71,7 +71,7 @@ const TestimonialCard = ({index, quote, name, title, companyLogo }: {index: numb
 // --- Main Testimonials Section Component ---
 const Testimonials = () => {
   return (
-    <section className="bg-black font-sans py-20 sm:py-28 px-4 sm:px-8">
+    <section id='testimonials' className="bg-black font-sans py-20 sm:py-28 px-4 sm:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-white">What My Clients Say</h2>

@@ -1,8 +1,8 @@
 import './glowingText.css';
 
-const GlowHeadline = ({ orangeText, whiteText, className }: {orangeText: string, whiteText: string, className: string }) => {
+const GlowHeadline = ({ orangeText, whiteText, className, id="" }: {id?: string, orangeText: string, whiteText: string, className: string }) => {
   return (
-    <div className={`flex flex-col items-center justify-center bg-black pt-10 pb-5 md:py-20 px-4 ${className}`}>
+    <div id={id} className={`flex flex-col items-center justify-center bg-black pt-10 pb-5 md:py-20 px-4 ${className}`}>
       {/* Container for the glowing text */}
       <h1 className="text-3xl md:text-4xl lg:text-6xl font-extrabold uppercase tracking-tight leading-none text-center">
         <span className="glow-text-purple">

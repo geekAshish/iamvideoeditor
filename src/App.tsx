@@ -31,6 +31,7 @@ function App() {
         orangeText="Long-Form"
         whiteText="Content"
         className=""
+        id="portfolio"
       />
 
       <YouTubeCarousel videoLinks={myVideos} />

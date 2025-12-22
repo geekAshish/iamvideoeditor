@@ -8,46 +8,48 @@ import RotatingText from './components/RotatingText/RoatatingText';
 
 const VideoEditorHero = () => {
   return (
-    <div className="bg-black text-white w-full min-h-screen p-8 font-sans">
+    // 1. Removed 'p-8' from here so the header touches the top edge
+    <div id='home' className="bg-black text-white w-full min-h-screen font-sans"> 
+      
       {/* HEADER / NAVBAR */}
-      <header className="flex justify-between items-center mb-20">
+      {/* 2. Added sticky, top-0, z-index, background, and padding (px-8 py-8) */}
+      <header className="sticky top-0 z-50 flex justify-between items-center px-8 py-8 bg-black/90 backdrop-blur-sm mb-12 transition-all duration-300">
         <div className="text-2xl font-bold tracking-wider">
           <span className="text-gray-400 font-light">Video</span>
           <span className="text-purple-500">Alchemist</span>
         </div>
         <nav className="hidden md:flex items-center space-x-10 text-sm uppercase tracking-widest">
-          <a href="#" className="hover:text-purple-400 transition-colors duration-300">Home</a>
-          <a href="#" className="hover:text-purple-400 transition-colors duration-300">About</a>
-          <a href="#" className="hover:text-purple-400 transition-colors duration-300">Portfolio</a>
-          <a href="#" className="hover:text-purple-400 transition-colors duration-300">Testimonials</a>
-          <a href="#" className="hover:text-purple-400 transition-colors duration-300">Contact</a>
+          <a href="#home" className="hover:text-purple-400 transition-colors duration-300">Home</a>
+          <a href="#about" className="hover:text-purple-400 transition-colors duration-300">About</a>
+          <a href="#portfolio" className="hover:text-purple-400 transition-colors duration-300">Portfolio</a>
+          <a href="#testimonials" className="hover:text-purple-400 transition-colors duration-300">Testimonials</a>
+          <a href="#contact" className="hover:text-purple-400 transition-colors duration-300">Contact</a>
         </nav>
         <div className="flex items-center space-x-5">
-          {/* <a href="#" aria-label="Facebook" className="hover:text-purple-400 transition-colors duration-300">
-            <FaFacebookF size="1.2em" />
-          </a> */}
           <a href="https://www.linkedin.com/in/aman-verma-i30" aria-label="LinkedIn" className="hover:text-purple-400 transition-colors duration-300">
             <FaLinkedinIn size="1.2em" />
           </a>
-          {/* <a href="#" aria-label="YouTube" className="hover:text-purple-400 transition-colors duration-300">
-            <FaYoutube size="1.2em" />
-          </a> */}
         </div>
       </header>
 
       {/* MAIN CONTENT */}
-      <main className="grid grid-cols-1 md:grid-cols-2 items-center gap-16">
+      {/* 3. Added 'px-8' here to maintain the original side spacing */}
+      <main className="grid grid-cols-1 md:grid-cols-2 items-center gap-16 px-8 pb-8">
+        
         {/* Left Column: Text Content */}
         <div className="text-center md:text-left">
           <p className="text-purple-400 font-semibold tracking-widest uppercase mb-2">
             Video Editor & Motion Designer
           </p>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-5">
-            PROFESSIONAL<br />
+          <span className='text-transparent bg-clip-text bg-linear-to-r from-white to-gray-500'>
+            PROFESSIONAL
+          </span>
+            <br />
 
             <RotatingText
               texts={['Video Editing', 'Cinematic Cuts', 'Fast-Paced Reels', 'Motion Graphics', 'Clean Transitions', 'Storytelling Edits']}
-              mainClassName="overflow-hidden rounded-lg"
+              mainClassName="overflow-hidden text-5xl rounded-lg font-serif italic"
               staggerFrom={"last"}
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
@@ -70,12 +72,7 @@ const VideoEditorHero = () => {
 
         {/* Right Column: Image & Graphics */}
         <div className="relative flex justify-center items-center h-[30rem]">
-          {/* <img
-            src={premiore_pro}
-            alt="Purple lightning effect"
-            className="absolute inset-0 w-full h-full object-contain opacity-70 animate-pulse"
-          /> */}
-
+          
           {/* Person's Image */}
           <img
             src={aman_pro}
@@ -83,7 +80,7 @@ const VideoEditorHero = () => {
             className="relative z-10 w-auto h-full object-cover"
           />
 
-          {/* Premiere Pro Icon */}
+          {/* Icons */}
           <img
             src={after_effect}
             alt="Adobe Premiere Pro Icon"
@@ -99,8 +96,6 @@ const VideoEditorHero = () => {
             alt="Adobe Premiere Pro Icon"
             className="absolute z-20 w-24 h-24 top-4 left-4 hidden md:block transform -rotate-12 transition-transform hover:scale-110"
           />
-
-          {/* After Effects Icon */}
           <img
             src={premiore_pro}
             alt="Adobe After Effects Icon"
