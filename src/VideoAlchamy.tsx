@@ -15,8 +15,8 @@ const VideoEditorHero = () => {
       {/* 2. Added sticky, top-0, z-index, background, and padding (px-8 py-8) */}
       <header className="sticky top-0 z-50 flex justify-between items-center px-8 py-8 bg-black/90 backdrop-blur-sm mb-12 transition-all duration-300">
         <div className="text-2xl font-bold tracking-wider">
-          <span className="text-gray-400 font-light">Video</span>
-          <span className="text-purple-500">Alchemist</span>
+          <span className="text-gray-400 font-light">Mr. </span>
+          <span className="text-purple-500">iEdit</span>
         </div>
         <nav className="hidden md:flex items-center space-x-10 text-sm uppercase tracking-widest">
           <a href="#home" className="hover:text-purple-400 transition-colors duration-300">Home</a>
