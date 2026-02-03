@@ -136,8 +136,8 @@ const CallToActionAndFooterDark = () => {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center space-y-8 sm:space-y-0">
           {/* Logo */}
           <div className="text-2xl font-bold tracking-wider">
-            <span className="text-gray-400 font-light">Video</span>
-            <span className="text-purple-500">Alchemist</span>
+            <span className="text-gray-400 font-light">Mr. </span>
+            <span className="text-purple-500">iEdit</span>
           </div>
 
           {/* Navigation Links */}
