@@ -1,7 +1,7 @@
 import { FaLinkedinIn } from 'react-icons/fa';
 import premiore_pro from './assets/premiore_pro.png'
 import after_effect from './assets/after_effect.png'
-import aman_pro from "./assets/Aman Portfolio Profile.png"
+import aman_pro from "./assets/Aman Portfolio Profile V3.png"
 import davinci from './assets/davinci.png'
 import photoshop from './assets/photoshop.png'
 import RotatingText from './components/RotatingText/RoatatingText';
@@ -79,7 +79,7 @@ const VideoEditorHero = () => {
             <div className="w-full h-full rounded-full border-2 border-gray-500/50 relative z-10 bg-black group overflow-hidden">
               <img
                 src={aman_pro}
-                alt="Ashish Kushwaha, professional video editor"
+                alt="Aman Verma, professional video editor"
                 className="relative z-10 w-auto h-full object-cover"
               />
             </div>
